@@ -6,7 +6,7 @@ import seaborn as sns
 # Cargar el dataset
 @st.cache  # Esta línea ayuda a que Streamlit no recargue los datos cada vez que se haga una interacción
 def load_data():
-    data = pd.read_csv('/ruta/del/archivo.csv')
+    data = pd.read_csv('IMDB-Movie-Data.csv')
     return data
 
 data = load_data()
